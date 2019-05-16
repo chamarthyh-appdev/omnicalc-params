@@ -1,0 +1,4 @@
+<h1>Flexible Payment</h1>
+
+A <%=@term_input.round(0)/12%> year loan of <%= number_to_currency(@principal_input, precision: 0)%>, with an 
+annual interest rate of <%=number_to_percentage(@apr_input*1200, precision: 2)%>, requires a monthly payment of <%=number_to_currency(@monthly_pmt, precision: 2)%>.
